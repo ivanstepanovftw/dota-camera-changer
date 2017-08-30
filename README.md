@@ -4,9 +4,6 @@ Changes camera distance in Dota 2.
 ## Download
 ```bash
 git clone https://github.com/AshFTW/linux-dota-camchanger.git
-```
-
-```bash
 cd ./linux-dota-camchanger
 ```
 
@@ -21,10 +18,21 @@ Move `camchanger.py` in `libclient.so` location:
 cp ./camchanger.py ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/camchanger.py
 ```
 
+Make symbolic link to your home folder:
+```bash
+cd ~/ && ln -s ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/camchanger.py ~/camchanger.py
+```
+Or make bash script at your home folder:
+```bash
+echo "cd ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/ && python3 camchanger.py" >> camchanger.sh
+chmod +x camchanger.sh
+```
+
 ## Launching
 ```bash
 python3 camchanger.py
 ```
+If you made `.sh` file, you can easily just launch terminal after each dota 2 update, type `./cam`, press <kbd>TAB</kbd> (you will see `./camchanger `) and hit <kbd>ENTER</kbd>.
 
 ## Usage example
 ```
