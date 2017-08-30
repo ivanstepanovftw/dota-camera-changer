@@ -24,14 +24,14 @@ echo "cd ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamr
 chmod +x camchanger.sh
 ```
 
-Or make symbolic link of `linuxsteamrt64` folder:
+Or make symbolic link of `linuxsteamrt64` folder to your home folder:
 ```bash
 ln -s ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/ ~/linuxsteamrt64
 ```
 
 ## Launching
-If you made `.sh` file, you can easily just launch terminal after each dota 2 update, type `./cam`, press <kbd>TAB</kbd> (you will see `./camchanger `) and hit <kbd>ENTER</kbd>.
-<br>If you made link:
+If you made bash script, you can easily just launch terminal after each dota 2 update, type `./cam`, press <kbd>TAB</kbd> (you will see `./camchanger `) and hit <kbd>ENTER</kbd>.
+<br>If you made symbolic link:
 ```bash
 cd linuxsteamrt64
 python3 camchanger.py
