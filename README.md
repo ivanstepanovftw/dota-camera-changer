@@ -31,7 +31,7 @@ ln -s ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64
 
 ## Launching
 If you made `.sh` file, you can easily just launch terminal after each dota 2 update, type `./cam`, press <kbd>TAB</kbd> (you will see `./camchanger `) and hit <kbd>ENTER</kbd>.
-If you made link:
+<br>If you made link:
 ```bash
 cd linuxsteamrt64
 python3 camchanger.py
