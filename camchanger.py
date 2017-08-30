@@ -1,7 +1,7 @@
 import os
 
-cam_default = "1134"
-lib = "libclient.so"
+cam_default = '1134'
+lib = 'libclient.so'
 to_find = b'\x00dota_camera_pitch_max\x00'
 
 
@@ -37,10 +37,10 @@ if __name__ == '__main__':
         camera_pitch = '0'*(4-len(camera_pitch)) + camera_pitch
         print('Replacing "'+(to_find+bytes(cam_curr, 'ascii')).decode('ascii')+'" to "'+(to_find+bytes(camera_pitch, 'ascii')).decode('ascii')+'".')
 
-        content = content.replace(to_find+bytes(cam_curr, "ascii"), to_find+bytes(camera_pitch, 'ascii'))
+        content = content.replace(to_find+bytes(cam_curr, 'ascii'), to_find+bytes(camera_pitch, 'ascii'))
         fw = open(lib, 'wb')
         fw.write(content)
         print('Done!')
     else:
-        print('Error: Cannot find "'+to_find+' in "'+lib+'".')
+        print('Error: Cannot find "'+to_find+'" in "'+lib+'".')
         exit(20)
