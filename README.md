@@ -13,32 +13,35 @@ Required Python 3.x
 sudo apt-get install python3
 ```
 
-Move `camchanger.py` in `libclient.so` location:
+Move `camchanger.py` to `libclient.so` location:
 ```bash
 cp ./camchanger.py ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/camchanger.py
 ```
 
-Make symbolic link to your home folder:
-```bash
-cd ~/ && ln -s ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/camchanger.py ~/camchanger.py
-```
-Or make bash script at your home folder:
+Make bash script at your home folder:
 ```bash
 echo "cd ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/ && python3 camchanger.py" >> camchanger.sh
 chmod +x camchanger.sh
 ```
 
-## Launching
+Or make symbolic link of `linuxsteamrt64` folder:
 ```bash
+ln -s ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/ ~/linuxsteamrt64
+```
+
+## Launching
+If you made `.sh` file, you can easily just launch terminal after each dota 2 update, type `./cam`, press <kbd>TAB</kbd> (you will see `./camchanger `) and hit <kbd>ENTER</kbd>.
+If you made link:
+```bash
+cd linuxsteamrt64
 python3 camchanger.py
 ```
-If you made `.sh` file, you can easily just launch terminal after each dota 2 update, type `./cam`, press <kbd>TAB</kbd> (you will see `./camchanger `) and hit <kbd>ENTER</kbd>.
 
-## Usage example
+## Output example
+I am prefer `1666` distance with `16:9` monitor.
 ```
 Would you like to backup "libclient.so"? [Y/n]: 
 Enter pitch max [current="1666", default="1134"]: 1234
 Replacing " dota_camera_pitch_max 1666" to " dota_camera_pitch_max 1234".
 Done!
 ```
-I am prefer `1666` distance with `16:9` monitor.
