@@ -1,4 +1,9 @@
+<p align="center">
+<img src="https://i.imgur.com/oX3cl9t.jpg">
+</p>
+  
 # linux-dota-camchanger
+
 Changes fixed camera distance in Dota 2 (before launch).
 
 ## Download
@@ -37,3 +42,9 @@ Enter pitch max [current="1666", default="1134"]: 1234
 Replacing " dota_camera_pitch_max 1666" to " dota_camera_pitch_max 1234".
 Done!
 ```
+
+## Screenshots
+### 16:4 with 1666 camera pitch
+<img src="https://i.imgur.com/Mge0u4e.jpg">
+### 5:4 with 1666 camera pitch
+<img src="https://i.imgur.com/84hgaLz.jpg">
