@@ -1,3 +1,6 @@
+## RUSSIAN:
+это полностью легальный чит для дота 2, при запуске делает камеру подальше. Запускать каждый раз после обновления доты. Если у тебя линукс (любой), то тупо переведи страницу и следуй инструкциям.
+
 <p align="center">
 <img src="https://i.imgur.com/oX3cl9t.jpg">
 </p>
@@ -26,8 +29,9 @@ cp ./camchanger.py ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/l
 
 Make bash script at your home folder:
 ```bash
-echo "cd ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/ && python3 camchanger.py && chmod +rwx libclient.so" >> dotacamchanger.sh
-chmod +x dotacamchanger.sh
+cd ~/
+echo "cd ~/.steam/steam/steamapps/common/dota\ 2\ beta/game/dota/bin/linuxsteamrt64/ && python3 camchanger.py && chmod +rwx libclient.so" >> ~/dotacamchanger.sh
+chmod +x ~/dotacamchanger.sh
 ```
 
 ## Launching
