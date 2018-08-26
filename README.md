@@ -47,20 +47,20 @@ git clone https://github.com/ivanstepanovftw/dota-camera-changer.git
 ```
 
 ### Installing
-Modify `path_to_dota`:
+`#` Modify `path_to_dota` (please, replace tilde `~` with `$HOME`, also don't escape spaces):
 ```bash
-path_to_dota="~/.steam/steam/steamapps/common/dota\ 2\ beta"
+path_to_dota="$HOME/.steam/steam/steamapps/common/dota 2 beta"
 ```
 
-Move `camchanger.py` in place with `libclient.so`:
+`#` Move `camchanger.py` in place with `libclient.so`:
 ```bash
-cp ./dota-camera-changer/camchanger.py ${path_to_dota}/game/dota/bin/linuxsteamrt64/camchanger.py
+cp ./dota-camera-changer/camchanger.py "${path_to_dota}/game/dota/bin/linuxsteamrt64/"
 ```
 
-Make bash script at your home `~/` folder:
+`#` Make bash script at your home `~` folder:
 ```bash
 cd ~
-echo "cd ${path_to_dota}/game/dota/bin/linuxsteamrt64/ && python3 camchanger.py && chmod +rwx libclient.so" > ~/dotacamchanger.sh
+echo "cd \"${path_to_dota}/game/dota/bin/linuxsteamrt64/\" && python3 camchanger.py && chmod +rwx libclient.so" > ~/dotacamchanger.sh
 chmod +x ~/dotacamchanger.sh
 ```
 
@@ -73,7 +73,7 @@ If you made bash script, you can easily just launch terminal (<kbd>Ctrl</kbd>+<k
 With `16:9` monitor, I am prefer `1700` distance. But lets make `1234` distance:
 ```
 Would you like to backup "libclient.so"? [Y/n]: 
-Enter pitch max [current="1700", default="1134"]: 1234
+Enter camera distance [current="1700", default="1134"]: 1234
 Done!
 ```
 

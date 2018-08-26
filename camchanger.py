@@ -7,6 +7,7 @@ cam_len = len(cam_default)
 if os.name == "nt":
     # if windows
     lib = "client.dll"
+    # Capture groups is not working as expected with re.sub(), so we will use positive lookbehind and lookahead
     to_find = b'(?<=\x00)\d{4}(?=\x00\x00\x00\x00dota_camera_distance\x00)'
     pass
 else:
